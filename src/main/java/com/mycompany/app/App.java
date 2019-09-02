@@ -7,6 +7,7 @@ public class App
 {
 
     private final String message = "Hello World!";
+    private final String secondMessage="Goodbye World";
 
     public App() {}
 
@@ -14,8 +15,11 @@ public class App
         System.out.println(new App().getMessage());
     }
 
-    private final String getMessage() {
+     final String getMessage() {
         return message;
+    }
+     final String getSecMessage() {
+        return secondMessage;
     }
 
 }

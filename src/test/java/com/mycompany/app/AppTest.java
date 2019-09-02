@@ -28,6 +28,14 @@ public class AppTest
             fail("Construction failed.");
         }
     }
+    @Test
+    public void getMessageTest(){
+        assertEquals("Hello World!", new App().getMessage());
+    }
+    @Test
+    public void getSecMessgaeTest(){
+        assertEquals("Goodbye World", new App().getSecMessage());
+    }
 
     @Test
     public void testAppMain()
